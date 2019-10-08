@@ -10,16 +10,8 @@ hl {
     font-family: "Comic Sans MS";
 }
 
-.helloWorldH2 {
-    font-size: 90px;
-    font-weight: 69;
-    color: black;
-}
-.aboutWrapper{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-}
-.navWrapper {
-    width: 240px;
+a {
+    font-family: 'Heebo', 'sans-serif';
+    font-size: 30px;
+    color: blue;
 }
