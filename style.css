@@ -3,6 +3,8 @@
 
 body {
         font-family: 'Heebo', 'sans-serif';
+    background: #F0F0F0;
+        margin: 0px;
 
 }
 hl {
@@ -15,3 +17,20 @@ a {
     font-size: 30px;
     color: blue;
 }
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* On mouse-over */
+.btn:hover {background: #eee;}
+
+.Gaming {color: green;}
+.Funny {color: dodgerblue;}
+.Scary {color: orange;}
+.Cool {color: red;}
+.Settings {color: black;}
