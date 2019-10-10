@@ -68,3 +68,9 @@ a {
     display: block;
   }
 }
+h2{
+    Color: Black;
+      font-size: 25px;  
+    text-align: center;
+    font-weight: 90;
+}
