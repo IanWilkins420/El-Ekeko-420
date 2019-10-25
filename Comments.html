@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <title>You Tube 2 - Comments</title>
+        <title>You Tube 2 - Chats</title>
         <link href="style.css" rel=stylesheet type=text/css>
     </head>
     <body>
@@ -16,109 +16,6 @@
             <a href="gaming.html">Gaming</a>
             <a href="music.html">Music</a>
             <a href="NSFW.html">Streams</a>
-            <a href="Comments.html">Comments</a>
-<div id="disqus_thread"></div>
+            <a href="Comments.html">Chats</a>
+<iframe src='https://minnit.chat/YouTube2?embed&&nickname=' width='1000' height='750' style='border:none;' allowTransparency='true'></iframe><br><a href='https://minnit.chat/YouTube2' target='_blank'>HTML5 Chatroom powered by Minnit Chat</a>
 <script>
-
-    <!DOCTYPE html>
-        <html>
-        <head>
-                    <meta charset="UTF-8">
-        <title>My Chat</title>
-        <style>
-            html {
-                height: 100%;
-            }
-
-            body {
-                padding: 0;
-                margin: 0;
-                height: 100%;
-                overflow: hidden;
-            }
-        </style>
-        <link rel="shortcut icon" href="https://d1pfint8izqszg.cloudfront.net/new/favicon.ico">
-
-        <script src="https://www.googletagmanager.com/gtag/js?id=UA-20104634-4" async></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'UA-20104634-3');
-
-            window.addEventListener(
-                'load',
-                function () {
-                    var hash = 'XTaGg236';
-
-                    /* in case of mobile device, notify the chat about orientation change */
-                    window.addEventListener(
-                        'orientationchange',
-                        function () {
-                            try {
-                                var data = {
-                                    type: 'orientationchange',
-                                    width: parseInt(RumbleTalkChat[hash].iframe.style.width),
-                                    height: parseInt(RumbleTalkChat[hash].iframe.style.height)
-                                };
-
-                                window.RumbleTalkChat[hash].iframe.contentWindow.postMessage(
-                                    data,
-                                    'https://' + window.RumbleTalkChat[hash].server
-                                );
-                            } catch (ignore) {
-                            }
-                        }
-                    );
-
-                    /**
-                     * checks if the given origin is of a chat service
-                     * @param {string} origin - the URL of the origin
-                     * @returns {boolean}
-                     */
-                    function validateOrigin(origin) {
-                        return (/^https:\/\/.+\.rumbletalk\.net(:4433)?$/).test(origin);
-                    }
-
-                    var openerInfo;
-                    window.addEventListener(
-                        'message',
-                        function (event) {
-                            /* came from the chat */
-                            if (validateOrigin(event.origin)) {
-                                if (openerInfo) {
-                                    openerInfo.source.postMessage(
-                                        event.data,
-                                        openerInfo.origin
-                                    );
-                                }
-
-                                /* came from the opening window */
-                            } else {
-                                openerInfo = {
-                                    source: event.source,
-                                    origin: event.origin
-                                };
-                                window.RumbleTalkChat[hash].iframe.contentWindow.postMessage(
-                                    event.data,
-                                    'https://' + window.RumbleTalkChat[hash].server
-                                );
-                            }
-                        }
-                    );
-                }
-            );
-        </script>
-                <head>
-        <body>
-                <table style="border-collapse: collapse; border-spacing: 0; text-align: center; width: 100%; height: 100%;">
-            <tr>
-                <td style="padding: 0;" id="rumbletalk-chat-fullscreen">
-                    <div id='rt-4092e9ada0f8593cf70bc5afc9de28f0'></div><script src='https://www.rumbletalk.com/client/?XTaGg236'></script>                </td>
-            </tr>
-        </table>
-                </body>
-        <html>
-        
